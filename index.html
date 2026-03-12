@@ -11,19 +11,36 @@
 body{
 font-family: Arial, Helvetica, sans-serif;
 max-width: 900px;
-margin: 40px auto;
+margin: 60px auto;
 padding: 0 20px;
 line-height: 1.7;
 color:#222;
 }
 
-h1{
-margin-bottom:0;
+.header{
+display:flex;
+align-items:flex-start;
+gap:30px;
+margin-bottom:40px;
+}
+
+.profile-photo{
+width:160px;
+border-radius:6px;
+}
+
+.name{
+font-size:2.3rem;
+margin-bottom:6px;
 }
 
 .subtitle{
 color:#555;
-margin-top:5px;
+margin-bottom:18px;
+}
+
+.bio{
+max-width:650px;
 }
 
 .links a{
@@ -31,8 +48,18 @@ margin-right:15px;
 text-decoration: none;
 }
 
-.section{
-margin-top:40px;
+.links a: hover{
+text-decoration: underline;
+}
+
+h2{
+margin-top:50px;
+border-bottom:1px solid #ddd;
+padding-bottom:6px;
+}
+
+.research-list li{
+margin-bottom:18px;
 }
 
 </style>
@@ -41,8 +68,15 @@ margin-top:40px;
 
 <body>
 
-<h1>Ana Rodrigues</h1>
-<p class="subtitle">PhD in Computer Science (Specialization in Human–Computer Interaction)</p>
+<div class="header">
+  <img src="photo.jpg" class="profile-photo">
+  
+<div class="bio">
+
+<div class="name">Ana Rodrigues</div>
+<div class="subtitle">
+PhD in Computer Science (Specialization in Human–Computer Interaction)
+</div>
 
 <p>
 I believe that technology plays a crucial role in shaping a better society. My research adopts a human-centered perspective, carefully considering the influence and impact that technological systems have on people. In particular, I study how interactive systems can support human creativity and decision-making in AI-mediated environments, preserving human agency.
@@ -50,7 +84,7 @@ I believe that technology plays a crucial role in shaping a better society. My r
 <p>
   To date, my research has focused on three main areas:
 </p>
-<ul>
+<ul class="research-list">
   <li>
     <strong>Creativity Support Tools (CSTs)</strong><br>
     I investigate the design of interactive systems that support human creativity.<br>
@@ -73,6 +107,10 @@ I believe that technology plays a crucial role in shaping a better society. My r
 <a href="#">Google Scholar</a>
 <a href="#">ORCID</a>
 <a href="#">LinkedIn</a>
+</div>
+  
+</div>
+  
 </div>
 
 <h2>Publications</h2>
