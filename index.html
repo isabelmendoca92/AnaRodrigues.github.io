@@ -9,175 +9,195 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
 body{
-font-family: Arial, Helvetica, sans-serif;
-max-width: 900px;
-margin: 60px auto;
-padding: 0 20px;
-line-height: 1.7;
-color:#222;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f8f4;
+  color: #1f2a1f;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  line-height: 1.7;
+}
+
+.container{
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
 }
 
 .header{
-display: flex;
-align-items:flex-start;
-gap:30px;
-margin-bottom:40px;
-}
-
-.profile-photo{
-width:160px;
-border-radius:8px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 50px;
 }
 
 .photo-block{
-display: flex;
-flex-direction: column;
-align-items:flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-photo{
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .social-links{
-margin-top:15px;
-display: flex;
-flex-direction: column;
-gap:8px;
-font-size:0.95rem;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.98rem;
 }
 
 .social-links a{
-text-decoration: none;
-color:#1f5c4a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #1f2a1f;
 }
 
-.social-links a: hover{
-text-decoration: underline;
+.social-links a:hover{
+  color: #2f5d50;
+  text-decoration: underline;
 }
 
 .social-links i{
-margin-right:6px;
-width:18px;
+  width: 18px;
+  text-align: center;
+  color: #2f5d50;
 }
 
 .name{
-font-size:2.3rem;
-margin-bottom:6px;
+  font-size: 2.5rem;
+  margin: 0 0 8px 0;
+  color: #183126;
 }
 
 .subtitle{
-color:#555;
-margin-bottom:18px;
+  font-size: 1.1rem;
+  color: #4a5c4f;
+  margin-bottom: 24px;
 }
 
 .bio{
-max-width:650px;
-}
-
-.links a{
-margin-right:15px;
-text-decoration: none;
-}
-
-.links a: hover
-{
-text-decoration: underline;
+  max-width: 720px;
 }
 
 h2{
-margin-top:50px;
-border-bottom:1px solid #ddd;
-padding-bottom:6px;
+  margin-top: 45px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #d8e3d8;
+  padding-bottom: 8px;
+  color: #244636;
+}
+
+.research-list{
+  padding-left: 22px;
 }
 
 .research-list li{
-margin-bottom:18px;
+  margin-bottom: 18px;
 }
 
+.section{
+  margin-top: 10px;
+}
+
+p{
+  margin-bottom: 16px;
+}
 </style>
 
 </head>
 
 <body>
 
-<div class="header">
-<div class="photo-block">
-  <img src="photo.jpg" class="profile-photo">
-<div class="social-links">
-  
-<a href="#" target="_blank">
-<i clas="fas fa-graduation-cap"></i> Google Scholar
-</a>
+<div class="container">
 
-<a href="#" target="_blank">
-<i class="fab fa-orcid"></i> ORCID
-</a>
+  <div class="header">
+    <div class="photo-block">
+      <img src="photo.jpg" alt="Ana Rodrigues" class="profile-photo">
 
-<a href="#" target="_blank">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
+      <div class="social-links">
+        <a href="#" target="_blank">
+          <i class="fas fa-graduation-cap"></i>
+          Google Scholar
+        </a>
 
-<a href="#">
-<i class="fas fa-file"></i> CV
-</a>
+        <a href="#" target="_blank">
+          <i class="fab fa-orcid"></i>
+          ORCID
+        </a>
 
-</div>
-</div>
-  
-<div class="bio">
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
 
-<div class="name">Ana Rodrigues</div>
-<div class="subtitle">
-PhD in Computer Science (Specialization in Human–Computer Interaction)
-</div>
+        <a href="#" target="_blank">
+          <i class="fas fa-file"></i>
+          CV
+        </a>
+      </div>
+    </div>
 
-<p>
-I believe that technology plays a crucial role in shaping a better society. My research adopts a human-centered perspective, carefully considering the influence and impact that technological systems have on people. In particular, I study how interactive systems can support human creativity and decision-making in AI-mediated environments, preserving human agency.
-</p>
-<p>
-  To date, my research has focused on three main areas:
-</p>
-<ul class="research-list">
-  <li>
-    <strong>Creativity Support Tools (CSTs)</strong><br>
-    I investigate the design of interactive systems that support human creativity.<br>
-    In particular, I explore how AI technologies, such as large language models, can assist with idea generation, evaluation, and selection while maintaining human control and reflective thinking.
-  </li>
-  <li>
-    <strong>Human-AI Interaction</strong><br>
-    I study how people interact with AI systems and how interfaces can support meaningful collaboration between humans and artificial intelligence.<br>
-    My research examines how design choices influence trust, understanding, and human agency when working with AI systems.
-  </li>
-  <li>
-    <strong>Decision-making in AI-mediated environments</strong><br>
-    My current research investigates how AI systems influence human decision-making and judgment.<br>
-    I explore how interactive systems can be designed to support reflective decision-making rather than simply providing automated recommendations, contributing to human flourishing in AI-supported workflows.
-  </li>
-</ul>
+    <div class="bio">
+      <div class="name">Ana Rodrigues</div>
 
+      <div class="subtitle">
+        PhD in Computer Science (Specialization in Human–Computer Interaction)
+      </div>
 
-</div>
-  
-</div>
+      <p>
+        I believe that technology plays a crucial role in shaping a better society. My research adopts a human-centered perspective, carefully considering the influence and impact that technological systems have on people. In particular, I study how interactive systems can support human creativity and decision-making in AI-mediated environments, preserving human agency.
+      </p>
 
-<h2>Publications</h2>
+      <p>
+        To date, my research has focused on three main areas:
+      </p>
 
-<p>List of publications coming soon.</p>
+      <ul class="research-list">
+        <li>
+          <strong>Creativity Support Tools (CSTs)</strong><br>
+          I investigate the design of interactive systems that support human creativity.<br>
+          In particular, I explore how AI technologies, such as large language models, can assist with idea generation, evaluation, and selection while maintaining human control and reflective thinking.
+        </li>
 
-</div>
+        <li>
+          <strong>Human-AI Interaction</strong><br>
+          I study how people interact with AI systems and how interfaces can support meaningful collaboration between humans and artificial intelligence.<br>
+          My research examines how design choices influence trust, understanding, and human agency when working with AI systems.
+        </li>
 
-<div class="section">
+        <li>
+          <strong>Decision-making in AI-mediated environments</strong><br>
+          My current research investigates how AI systems influence human decision-making and judgment.<br>
+          I explore how interactive systems can be designed to support reflective decision-making rather than simply providing automated recommendations, contributing to human flourishing in AI-supported workflows.
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<h2>Projects</h2>
+  <div class="section">
+    <h2>Publications</h2>
+    <p>List of publications coming soon.</p>
+  </div>
 
-<p>Information about research projects and prototypes coming soon.</p>
+  <div class="section">
+    <h2>Projects</h2>
+    <p>Information about research projects and prototypes coming soon.</p>
+  </div>
 
-</div>
-
-<div class="section">
-
-<h2>Contact</h2>
-
-<p>Email: ana.rodrigues.iti@gmail.com</p>
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Email: ana.rodrigues.iti@gmail.com</p>
+  </div>
 
 </div>
 
