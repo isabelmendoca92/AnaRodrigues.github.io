@@ -54,7 +54,7 @@ body{
   width: 165px;
   display: block;
   border-radius:18px;
-  position:relative;
+  position: relative;
   z-index:1
 }
 
@@ -68,21 +68,30 @@ body{
   line-height: 1.05;
   letter-spacing: -0.02em;
   /*margin: 18px 0 14px 0;*/
-  margin: 10px 0 12px 0;
+  /*margin: 10px 0 12px 0;*/
   color: #008B76;
 
-  display: flex;
+  /*display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px;*/
 }
 
-.name::before{
+.name-wrap{
+  position: relative;
+  margin: 14px 0 14px 0;
+  padding-top: 14px;
+}
+
+.name-wrap::before{
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 42px;
   height: 1px;
-  background: #1f2a1f;
-  opacity: 0.3;
+  background: #d7e0d7;
 }
+
 
 .subtitle{
   font-size: 0.88rem;
@@ -325,7 +334,9 @@ p{
       <img src="photo.jpg" alt="Ana Rodrigues" class="profile-photo">
       
       <div class="profile-info">
+        <div class="name-wrap">
         <h1 class="name">Ana Rodrigues</h1>
+        </div>
       
         <div class="subtitle">
           PhD in Computer Science<br>
