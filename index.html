@@ -67,8 +67,21 @@ body{
   font-weight:500;
   line-height: 1.05;
   letter-spacing: -0.02em;
-  margin: 18px 0 14px 0;
+  /*margin: 18px 0 14px 0;*/
+  margin: 10px 0 12px 0;
   color: #008B76;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.name::before{
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: #1f2a1f;
+  opacity: 0.3;
 }
 
 .subtitle{
@@ -327,7 +340,7 @@ p{
       
       <div class="social-links">
         <a href="#" target="_blank">
-          <i class="fas fa-graduation-cap"></i>
+          <li class="fas fa-graduation-cap"></li>
           Google Scholar
         </a>
 
