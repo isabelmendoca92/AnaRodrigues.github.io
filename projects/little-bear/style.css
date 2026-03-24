@@ -46,3 +46,13 @@ p {
   color: #244636;
 }
 
+.concept-image {
+  margin-top: 60px;
+  transform: translateX(60px); /* 👉 move ligeiramente para a direita */
+}
+
+.concept-image img {
+  width: 85%;
+  border-radius: 12px;
+}
+
