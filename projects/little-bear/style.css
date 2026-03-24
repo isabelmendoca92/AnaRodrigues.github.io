@@ -48,7 +48,7 @@ p {
 
 .concept-image {
   margin-top: 60px;
-  transform: translateX(60px); /* 👉 move ligeiramente para a direita */
+  transform: translateX(40px); /* 👉 move ligeiramente para a direita */
 }
 
 .concept-image img {
