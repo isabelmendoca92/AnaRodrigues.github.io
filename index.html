@@ -143,8 +143,19 @@ p{
   margin-bottom: 40px;
 }
 
+.publication-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .publication-image img{
-  width: 180px;
+/*width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;*/
+  width: 220px;
   max-width: 100%;
   height: auto;
   display: block;
@@ -162,22 +173,21 @@ p{
 .publication-authors{
   margin: 0 0 6px 0;
   font-weight: 400;
-  font-size: 16px;
-  font-size: 0.95rem;
+  font-size: 15px;
   color: #000;
+  line-height: 1.5;
 }
 
 .publication-authors .me{
   color: #4a5c4f;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 15px;
 }
 
 .publication-venue{
-  margin: 0 0 10px 0;
-  font-size: 0.95rem;
-  font-weight: 300; /* Regular */
+  margin: 0 0 14px 0;
   font-size: 14px;
+  font-weight: 200; /* Regular */
   color: #97755D;
 }
 
@@ -372,7 +382,10 @@ p{
         <p class="publication-description">
           Creativity Support Tools (CSTs) have grown exponentially in the HCI field. However, this growth has always leaned towards divergent thinking, thus neglecting convergent thinking. The research focused on four major points: i) the domain of the tool, ii) the type of system and interface developed in the tools, iii) the methodology used, and iv) the creative context of the tools. We present six guidelines to support the improvement of existing and the development of new CSTs.
         </p>
-          <a href="https://doi.org/10.1016/j.yjoc.2024.100079">Cited by Yale & Harvard, 2024</a>
+          <!--<a href="https://doi.org/10.1016/j.yjoc.2024.100079">Cited by Yale & Harvard, 2024</a>-->
+          <a href="https://doi.org/10.1016/j.yjoc.2024.100079" class="citation-note" target="_blank" rel="noopener">
+            Cited by Yale & Harvard, 2024
+          </a>
         
         <div class="publication-links">
           <a href="https://doi.org/10.1145/3591196.3596821" target="_blank" rel="noopener">Paper</a>
