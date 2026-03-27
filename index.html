@@ -132,6 +132,10 @@ p{
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
 }
   
 .publication-item{
@@ -219,6 +223,70 @@ p{
 
 .publication-links a:hover{
   background: #e7ece7;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.project-card{
+  border: 1px solid rgba(166, 137, 117, 0.28);
+  border-radius: 14px;
+  padding: 22px 22px 20px;
+  background: #ffffff;
+}
+
+.project-title{
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #A68975;
+  line-height: 1.4;
+}
+
+.project-description{
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.65;
+  color: #2b2b2b;
+}
+
+.project-role{
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #97755D;
+}
+
+.project-role span{
+  font-weight: 500;
+  color: #A68975;
+}
+
+.project-links{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-links a{
+  font-size: 14px;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #efe3d9;
+  color: #94745E;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-links a:hover{
+  background: #e4d2c3;
+  color: #7f624e;
 }
 
 .site-footer{
@@ -544,15 +612,77 @@ p{
   </div>
   <div class="section">
     <h2>UX/UI Projects</h2>
-      <h3 class="publication-title">
-          Designing an Emotional Storytelling Experience for Children (3D Animation Project)
-      </h3>
-      <p class="publication-authors">
-        How To Make Friends (And Keep Them): A story about a curious little bear who wants to make a friend, but discovers that the hardest part is, in fact, keeping him.
+      <div class="projects-grid">
+
+    <div class="project-card">
+      <h3 class="project-title">Happymina</h3>
+      <p class="project-description">
+        Anxiety support app designed around calming interactions, breathing exercises, and user-centered research.
       </p>
-      <p class="publication-venue">
-        3D Animation Project 2017
+      <p class="project-role">
+        <span>Role:</span> UX Research, Interaction Design, Prototyping
       </p>
+      <div class="project-links">
+        <a href="Happymina/Happymina_CaseStudy.pdf" target="_blank" rel="noopener">View Case Study</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 class="project-title">Autonomous Check-In Service Design</h3>
+      <p class="project-description">
+        Seamless guest check-in experience designed to reduce arrival friction through service mapping and mobile interaction.
+      </p>
+      <p class="project-role">
+        <span>Role:</span> UX Research, Service Design, Concept Development
+      </p>
+      <div class="project-links">
+        <a href="CheckIn/Autonomous_CheckIn_CaseStudy.pdf" target="_blank" rel="noopener">View Case Study</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 class="project-title">Smart Hike</h3>
+      <p class="project-description">
+        Context-aware hiking service designed to provide relevant real-time information for safety and experience.
+      </p>
+      <p class="project-role">
+        <span>Role:</span> UX Design, Research, Ideation, Prototyping
+      </p>
+      <div class="project-links">
+        <a href="SmartHike/Smart_Hike_CaseStudy.pdf" target="_blank" rel="noopener">View Case Study</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 class="project-title">Social App for University Students</h3>
+      
+      <p class="project-description">
+        Mobile app concept to support social integration of international students through communication, shared activities, and location-based interaction.
+      </p>
+      
+      <p class="project-role">
+        <span>Role:</span> UX Research, Concept Development, Low-Fidelity Prototyping, UI Design
+      </p>
+      
+      <div class="project-links">
+        <a href="Social/Social_CaseStudy.pdf" target="_blank" rel="noopener">View Case Study</a>
+      </div>
+    </div>
+        
+    <div class="project-card">
+      <h3 class="project-title">A Digital Service in the Physical World</h3>
+      <p class="project-description">
+        Cross-platform banking concept connecting desktop, mobile, and smartwatch experiences for younger users.
+      </p>
+      <p class="project-role">
+        <span>Role:</span> UX Strategy, Interaction Design, Low-Fidelity Prototyping
+      </p>
+      <div class="project-links">
+        <a href="DigitalService/Digital_Service_CaseStudy.pdf" target="_blank" rel="noopener">View Case Study</a>
+      </div>
+    </div>
+  </div>
+</div>
     
   </div>
 
