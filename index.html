@@ -227,81 +227,71 @@ p{
 
 .projects-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+  gap: 18px;
   margin-top: 24px;
 }
 
 .project-card{
-  border: 1px solid rgba(166, 137, 117, 0.28);
-  border-radius: 14px;
-  padding: 22px 22px 20px;
-  background: #ffffff;
+  border: none; /* remove a linha */
+  border-radius: 0; /* sem cantos arredondados */
+  padding: 18px 18px 16px;
+  background: rgba(166, 137, 117, 0.08); /* fundo suave */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-title{
-  margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #A68975;
-  line-height: 1.4;
+  margin: 0 0 8px 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 1.35;
 }
 
 .project-description{
-  margin: 0 0 12px 0;
-  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 1.65;
+  line-height: 1.6;
   color: #2b2b2b;
 }
 
 .project-role{
-  margin: 0 0 16px 0;
-  font-size: 15px;
-  font-weight: 400;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 190;
   line-height: 1.5;
   color: #97755D;
 }
 
 .project-role span{
-  font-weight: 500;
+  font-weight: 400;
   color: #A68975;
 }
 
 .project-links{
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .project-links a{
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: #efe3d9;
+  padding: 4px 10px;
+  border-radius: 0; /* quadrado */
+  border: 1px solid rgba(166, 137, 117, 0.35); /* linha leve */
+  background: transparent;
   color: #94745E;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .project-links a:hover{
-  background: #e4d2c3;
+  background: rgba(166, 137, 117, 0.12);
   color: #7f624e;
-}
-
-.site-footer{
-  margin-top: 80px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #94745E;
-  font-weight: 300;
-}
-
-.footer-line{
-  width: 60%;
-  height: 1px;
-  background: #A68975;
-  margin: 0 auto 14px auto;
 }
 
 .site-footer p{
