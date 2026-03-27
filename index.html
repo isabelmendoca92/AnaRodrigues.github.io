@@ -74,181 +74,26 @@ body{
 .social-links i{
   color: #A68975;
 }
+
+.research-image{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.research-image img{
+  max-width: 100%;
+  height: auto;
+}
+
   
-
-/*.header{
-  display: grid;*/
-  /*grid-template-columns: 230px 1fr;*/
-  /*grid-template-columns: 190px 1fr;*/
-  /*gap: 46px;*/
-  /*gap: 40px;
-  align-items: start;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.photo-block{
-  width: 170px;
-  position: relative;
-}
-
-.photo-block::before{
-  display: none;
-}
-
-.profile-photo{
-  width: 165px;
-  display: block;
-  border-radius:18px;
-  position: relative;
-  z-index:1
-}
-
-.profile-info{
-  margin-bottom: 24px;
-}
-
-.name{
-  font-size:1.85rem;
-  font-weight:500;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  /*margin: 18px 0 14px 0;*/
-  /*margin: 10px 0 12px 0;*/*/
-  /*color: #008B76;*/
-
-  /*display: flex;
-  align-items: center;
-  gap: 12px;*/
-}
-
-/*.name-wrap{
-  position: relative;
-  margin: 14px 0 14px 0;
-  padding-top: 14px;
-}
-
-.name-wrap::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 42px;
-  height: 1px;
-  background: #d7e0d7;
-}*/
-
-
-/*.subtitle{
-  font-size: 0.88rem;
-  color: #4a5c4f;
-  margin-bottom: 12px;
-  font-weight: 300;
-  line-height: 1.45;
-}*/
-
-/*.location{
-  font-size: 0.92rem;
-  color: #667267;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 18px;
-}
-
-.location i{
-  color: #55A38B;
-  font-size: 0.9rem;
-}*/
-
-/*.social-links{
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-  font-size: 0.98rem;
-}
-
-.social-links a{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #1f2a1f;
-  transition: transform 0.15s ease, color 0.2s ease;
-}
-
-.social-links a:hover{
-  color: #2f5d50;
-  transform: translateX(3px);
-}
-
-.social-links i{
-  width: 18px;
-  text-align: center;
-  color: #2f5d50;
-}*/
-
-.bio{
-  max-width: 720px;
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-}
-
-.bio h2{
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-h2{
-  margin-top: 54px;
-  margin-bottom: 18px;
-  color: #A68975;
-  position: relative;
-  display: inline-block;
-  font-size: 1.32rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  padding-bottom: 10px;
-}
-
-.research-title{
-  font-weight: 300; /* Light */
-  color:#4d7c6f;
-  /*position: relative;*/
-  display: block;
-  /*padding-left: 12px;*/
-  padding-left: 0px;
-  margin-bottom: 4px;
-}
-
-.research-list{
-  list-style: none;
-  padding-left: 0;
-  margin-top: 18px;
-  margin-left: 0px;
-}
-  
-.research-list li{
-  margin-bottom: 20px;
-}
-
-.research-description{
-  font-weight: 200; /* Extra Light */
-  display: block;
-  margin-top: 0;
-  line-height: 1.65;
-  margin-left: 0;
-}
-
-.section{
+/*.section{
   margin-top: 8px;
 }
 
 p{
   margin-bottom: 16px;
-}
+}*/
 
 @media (max-width: 820px){
   body{
@@ -395,63 +240,9 @@ p{
       </div>
     </div>
   
-  <!--<div class="header">-->
-    <!--<div class="photo-block">-->
-      <!--<div class="profile-info">-->
-    <!--<div class="name-wrap">
-      <h1 class="name">Ana Rodrigues</h1>
-    </div>
-
-    <img src="photo.jpg" alt="Ana Rodrigues" class="profile-photo">
-    <br>
-    <div class="profile-info"> 
-      <div class="subtitle">
-        PhD in Computer Science<br>
-        Research in Human–Computer Interaction
-      </div>
-    
-      <div class="location">
-        <li class="fas fa-map-marker-alt"></li>
-        Lucerne, Switzerland
-      </div>
-    </div>-->
-
-      
-
-    <!--<div class="bio">
-      <h2>About me</h2>
-      <p>
-        I believe that technology plays a crucial role in shaping a better society. I adopt a human-centered perspective, carefully considering the influence and impact that technological systems have on people.
-      </p>
-
-      <p>
-        To date, my research has focused on three main areas
-      </p>
-
-      <ul class="research-list">
-        <li>
-          <span class="research-title">Creativity Support Tools (CSTs)</span>
-          <span class="research-description">
-          I investigate how interactive systems can support human creativity. In particular, I explore how advanced technologies, such as large language models, can assist in idea generation, evaluation, and selection while maintaining human control.
-          </span>
-        </li>
-
-        <li>
-          <span class="research-title">Human-AI Interaction</span>
-          <span class="research-description">
-            I investigate how people interact with AI systems and how interfaces can support meaningful collaboration between humans and artificial intelligence. The focus is on how design choices influence control, transparency, trust, and human agency when working with AI systems.
-          </span>
-        </li>
-
-        <li>
-          <span class="research-title">Decision-making in AI-mediated environments</span>
-          <span class="research-description">
-            My current research investigates how AI systems influence human decision-making and judgment. I explore how interactive systems can be designed to support reflective decision-making rather than simply providing automated recommendations, contributing to human flourishing in AI-supported workflows.
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>-->
+  <div class="research-image">
+    <img src="areas.jpg" alt="Research Areas">
+  </div>
 
   <div class="section">
     <h2>Publications</h2>
