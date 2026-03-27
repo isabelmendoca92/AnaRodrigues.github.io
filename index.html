@@ -17,25 +17,71 @@
 body{
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #1f2a1f;
+  /*color: #1f2a1f;*/
+  color: #2b2b2b;
   max-width: 1100px;
   margin: 0 auto;
   padding: 70px 40px 90px;
   line-height: 1.7;
-  background-color: #fdfcf6;
+  background-color: #ffffff;
 }
 
 .container{
   padding: 0;
 }
+
+.bio-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.bio-image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  padding-top: 14px;
+  border-top: 1px solid #A68975;
+  font-size: 0.96rem;
+  flex-wrap: wrap;
+}
+
+.social-links a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #A68975;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+}
+
+.social-links a:hover{
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+.social-links i{
+  color: #A68975;
+}
   
 
-.header{
-  display: grid;
+/*.header{
+  display: grid;*/
   /*grid-template-columns: 230px 1fr;*/
-  grid-template-columns: 190px 1fr;
+  /*grid-template-columns: 190px 1fr;*/
   /*gap: 46px;*/
-  gap: 40px;
+  /*gap: 40px;
   align-items: start;
   margin-bottom: 60px;
   position: relative;
@@ -68,15 +114,15 @@ body{
   line-height: 1.05;
   letter-spacing: -0.02em;
   /*margin: 18px 0 14px 0;*/
-  /*margin: 10px 0 12px 0;*/
-  color: #008B76;
+  /*margin: 10px 0 12px 0;*/*/
+  /*color: #008B76;*/
 
   /*display: flex;
   align-items: center;
   gap: 12px;*/
 }
 
-.name-wrap{
+/*.name-wrap{
   position: relative;
   margin: 14px 0 14px 0;
   padding-top: 14px;
@@ -90,18 +136,18 @@ body{
   width: 42px;
   height: 1px;
   background: #d7e0d7;
-}
+}*/
 
 
-.subtitle{
+/*.subtitle{
   font-size: 0.88rem;
   color: #4a5c4f;
   margin-bottom: 12px;
   font-weight: 300;
   line-height: 1.45;
-}
+}*/
 
-.location{
+/*.location{
   font-size: 0.92rem;
   color: #667267;
   display: flex;
@@ -113,9 +159,9 @@ body{
 .location i{
   color: #55A38B;
   font-size: 0.9rem;
-}
+}*/
 
-.social-links{
+/*.social-links{
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -141,7 +187,7 @@ body{
   width: 18px;
   text-align: center;
   color: #2f5d50;
-}
+}*/
 
 .bio{
   max-width: 720px;
@@ -307,14 +353,14 @@ p{
   margin-top: 80px;
   text-align: center;
   font-size: 0.85rem;
-  color: #667267;
+  color: #94745E;
   font-weight: 300;
 }
 
 .footer-line{
   width: 60%;
   height: 1px;
-  background: #d7e0d7;
+  background: #A68975;
   margin: 0 auto 14px auto;
 }
 
@@ -328,11 +374,31 @@ p{
 <body>
 
 <div class="container">
-
-  <div class="header">
-    <div class="photo-block">
+  <div class="bio-image">  
+    <img src="Bio.jpg" alt="About Ana Rodrigues">
+  </div>
+  <div class="social-links">
+        <a href="#" target="_blank">
+          <i class="fas fa-graduation-cap"></i>
+            Google Scholar
+        </a>
+  
+        <a href="#" target="_blank">
+          <i class="fab fa-orcid"></i>
+            ORCID
+        </a>
+  
+        <a href="#" target="_blank">
+          <i class="fab fa-linkedin"></i>
+            LinkedIn
+        </a>
+      </div>
+    </div>
+  
+  <!--<div class="header">-->
+    <!--<div class="photo-block">-->
       <!--<div class="profile-info">-->
-    <div class="name-wrap">
+    <!--<div class="name-wrap">
       <h1 class="name">Ana Rodrigues</h1>
     </div>
 
@@ -348,27 +414,11 @@ p{
         <li class="fas fa-map-marker-alt"></li>
         Lucerne, Switzerland
       </div>
-    </div>
+    </div>-->
 
-      <div class="social-links">
-        <a href="#" target="_blank">
-          <i class="fas fa-graduation-cap"></i>
-          Google Scholar
-        </a>
+      
 
-        <a href="#" target="_blank">
-          <i class="fab fa-orcid"></i>
-          ORCID
-        </a>
-
-        <a href="#" target="_blank">
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
-        </a>
-      </div>
-    </div>
-
-    <div class="bio">
+    <!--<div class="bio">
       <h2>About me</h2>
       <p>
         I believe that technology plays a crucial role in shaping a better society. I adopt a human-centered perspective, carefully considering the influence and impact that technological systems have on people.
@@ -401,7 +451,7 @@ p{
         </li>
       </ul>
     </div>
-  </div>
+  </div>-->
 
   <div class="section">
     <h2>Publications</h2>
