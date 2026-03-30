@@ -289,10 +289,23 @@ p{
   transform: translateY(-2px);
 }
 
+.project-tags{
+  display: flex;
+  gap: 6px;
+  margin: 8px 0 14px;
+}
+
+.project-tags span{
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
 .project-title{
-  margin: 0 0 8px 0;
-  font-size: 17px;
-  font-weight: 400;
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 500;
   color: #A68975;
   line-height: 1.35;
 }
@@ -320,24 +333,26 @@ p{
 
 .project-links{
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
+  /*justify-content: center;*/
+  justify-content: flex-start;
+  /*gap: 8px;
+  flex-wrap: wrap;*/
 }
 
 .project-links a{
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
-  padding: 6px 14px;
+  /*padding: 6px 14px;
   border-radius: 25px;
   border: none;
-  background: #FAF5F5;
+  background: #FAF5F5;*/
   color: #94745E;
-  transition: background 0.2s ease;
+  /*transition: background 0.2s ease;*/
 }
 
 .project-links a:hover{
-  background: #e7ece7;
+  /*background: #e7ece7;*/
+  opacity: 0.7;
 }
 
 .site-footer{
@@ -584,10 +599,15 @@ p{
     <div class="projects-grid">
       <div class="project-card">
         <h3 class="project-title">Happymina</h3>
-        <p class="project-description">
+        <!--<p class="project-description">
           Anxiety support app designed around calming interactions, breathing exercises, and user-centered research.
-        </p>
-        <p class="project-role">Research & Concept Process, UX, Programing</p>
+        </p>-->
+        <!--<p class="project-role">Research & Concept Process, UX, Programing</p>-->
+        <div class="project-tags">
+          <span class="tag-research"></span>
+          <span class="tag-design"></span>
+          <span class="tag-prototype"></span>
+        </div>
         <div class="project-links">
           <a href="projects/happymina.pdf" target="_blank">View Case Study</a>
         </div>
