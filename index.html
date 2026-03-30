@@ -252,21 +252,25 @@ p{
 .tag-research{
   color: #B393D3;
   border-color: #D8C4F0;
+  background-color: #D8C4F0;
 }
 
 .tag-design{
   color: #6EAFCF;
   border-color: #A8D8F0;
+  background-color: #A8D8F0;
 }
 
 .tag-service{
   color: #73B78A;
   border-color: #BFE6C8;
+  background-color: #BFE6C8;
 }
 
 .tag-prototype{
   color: #D89A52;
   border-color: #FFD8A8;
+  background-color: #FFD8A8;
 }
 
 .tag-tooltip{
@@ -331,14 +335,15 @@ p{
   display: flex;
   gap: 6px;
   margin: 8px 0 14px;
+  flex-wrap: wrap;
 }
 
-.project-tags span{
+/*.project-tags span{
   width: 10px;
   height: 10px;
   border-radius: 2px;
   display: inline-block;
-}
+}*/
 
 .project-title{
   margin: 0 0 6px 0;
@@ -380,19 +385,29 @@ p{
 .project-links a{
   font-size: 14px;
   text-decoration: none;
-  /*padding: 6px 14px;
-  border-radius: 25px;
-  border: none;
-  background: #FAF5F5;*/
   color: #94745E;
-  /*transition: background 0.2s ease;*/
 }
 
 .project-links a:hover{
-  /*background: #e7ece7;*/
   opacity: 0.7;
 }
 
+.project-tags .tag-research{
+  background-color: #D8C4F0;
+}
+
+.project-tags .tag-design{
+  background-color: #A8D8F0;
+}
+
+.project-tags .tag-service{
+  background-color: #BFE6C8;
+}
+
+.project-tags .tag-prototype{
+  background-color: #FFD8A8;
+}
+  
 .site-footer{
   margin-top: 60px;
   text-align: center;
@@ -642,9 +657,9 @@ p{
         </p>-->
         <!--<p class="project-role">Research & Concept Process, UX, Programing</p>-->
         <div class="project-tags">
-          <span class="tag-research"></span>
-          <span class="tag-design"></span>
-          <span class="tag-prototype"></span>
+          <span class="tag-label tag-research">Research</span>
+          <span class="tag-label tag-design">UX Design</span>
+          <span class="tag-label tag-prototype">Prototyping</span>
         </div>
         <div class="project-links">
           <a href="projects/happymina.pdf" target="_blank">View Case Study</a>
