@@ -276,11 +276,17 @@ p{
 
 .project-card{
   padding: 18px 18px 16px;
-  background: #FAF5F5;
-  
+  /*background: #FAF5F5;*/
+  border: 1px solid rgba(166, 137, 117, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover{
+  border-color: #A68975;
+  transform: translateY(-2px);
 }
 
 .project-title{
