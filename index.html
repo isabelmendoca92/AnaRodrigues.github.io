@@ -244,7 +244,7 @@ p{
   font-weight: 500;
   letter-spacing: 0.02em;
   border: 1px solid;
-  background: #ffffff;
+  background: transparent;
   line-height: 1.2;
   cursor: default;
 }
@@ -252,25 +252,21 @@ p{
 .tag-research{
   color: #B393D3;
   border-color: #D8C4F0;
-  background-color: #D8C4F0;
 }
 
 .tag-design{
   color: #6EAFCF;
   border-color: #A8D8F0;
-  background-color: #A8D8F0;
 }
 
 .tag-service{
   color: #73B78A;
   border-color: #BFE6C8;
-  background-color: #BFE6C8;
 }
 
 .tag-prototype{
   color: #D89A52;
   border-color: #FFD8A8;
-  background-color: #FFD8A8;
 }
 
 .tag-tooltip{
@@ -317,7 +313,7 @@ p{
 }
 
 .project-card{
-  padding: 18px 18px 16px;
+  padding: 24px 18px 16px;
   /*background: #FAF5F5;*/
   border: 1px solid rgba(166, 137, 117, 0.3);
   display: flex;
@@ -326,7 +322,7 @@ p{
   transition: all 0.2s ease;
   text-decoration: none;
   color: inherit;
-  position: relative;
+  /*position: relative;*/
 }
 
 .project-card::after{
@@ -345,12 +341,12 @@ p{
   cursor: pointer;
 }
 
-.project-tags{
+/*.project-tags{
   display: flex;
   gap: 8px;
   margin: 16px 0 20px;
   flex-wrap: wrap;
-}
+}*/
 
 /*.project-tags span{
   width: 10px;
@@ -406,7 +402,7 @@ p{
   opacity: 0.7;
 }
 
-.project-tags .tag-research{
+/*.project-tags .tag-research
   background-color: #D8C4F0;
 }
 
@@ -420,7 +416,7 @@ p{
 
 .project-tags .tag-prototype{
   background-color: #FFD8A8;
-}
+}*/
   
 .site-footer{
   margin-top: 60px;
@@ -668,15 +664,15 @@ p{
       <a href="projects/happymina.pdf" target="_blank"class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">Happymina</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Anxiety support app designed around calming interactions, breathing exercises, and user-centered research.
-        </p>-->
+        </p>
         <!--<p class="project-role">Research & Concept Process, UX, Programing</p>-->
-        <div class="project-tags">
+        <!--<div class="project-tags">
           <span class="tag-label tag-research">Research</span>
           <span class="tag-label tag-design">UX Design</span>
           <span class="tag-label tag-prototype">Prototyping</span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/happymina.pdf" target="_blank">View Case Study</a>
         </div>
@@ -686,15 +682,15 @@ p{
       <a href="projects/check-in.pdf" target="_blank" class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">Check-In</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Seamless guest check-in experience designed to reduce arrival friction through service mapping and mobile interaction.
         </p>
-        <p class="project-role">Research & Concept Process, Service Design</p>-->
-        <div class="project-tags">
+        <!--<p class="project-role">Research & Concept Process, Service Design</p>-->
+        <!--<div class="project-tags">
           <span class="tag-research"></span>
           <span class="tag-service"></span>
           <span class="tag-prototype"></span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/check-in.pdf" target="_blank">View Case Study</a>
         </div>
@@ -704,15 +700,15 @@ p{
       <a href="projects/smarthike.pdf" target="_blank" class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">Smart Hike</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Context-aware hiking service designed to provide relevant real-time information for safety and experience.
         </p>
-        <p class="project-role">Research & Concept Process, Prototyping</p>-->
-        <div class="project-tags">
+        <!--<p class="project-role">Research & Concept Process, Prototyping</p>-->
+        <!--<div class="project-tags">
           <span class="tag-research"></span>
           <span class="tag-service"></span>
           <span class="tag-prototype"></span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/smarthike.pdf" target="_blank">View Case Study</a>
         </div>
@@ -722,15 +718,15 @@ p{
       <a href="projects/social.pdf" target="_blank" class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">Social.in</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Mobile app concept to support social integration of international students through communication, shared activities, and location-based interaction.
         </p>
-        <p class="project-role">Research & Concept Process, Prototyping</p>-->
-        <div class="project-tags">
+        <!--<p class="project-role">Research & Concept Process, Prototyping</p>-->
+        <!--<div class="project-tags">
           <span class="tag-research"></span>
           <span class="tag-service"></span>
           <span class="tag-prototype"></span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/social.pdf" target="_blank">View Case Study</a>
         </div>
@@ -740,14 +736,14 @@ p{
       <a href="projects/4.pdf" target="_blank" class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">Redesign Services</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Cross-platform banking concept connecting desktop, mobile, and smartwatch experiences for younger users.
         </p>
-        <p class="project-role">Research Process, Design Prototyping </p>-->
-        <div class="project-tags">
+        <!--<p class="project-role">Research Process, Design Prototyping </p>-->
+        <!--<div class="project-tags">
           <span class="tag-design"></span>
           <span class="tag-prototype"></span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/4.pdf" target="_blank" rel="noopener">View Case Study</a>
         </div>
@@ -757,14 +753,14 @@ p{
       <a href="projects/context-food.pdf" target="_blank" class="project-card">
       <!--<div class="project-card">-->
         <h3 class="project-title">ShelfMind</h3>
-        <!--<p class="project-description">
+        <p class="project-description">
           Smart home system using sensors and beacons to provide real-time, context-aware information about food availability and management.
         </p>
-        <p class="project-role">Research Process, Design Prototyping</p>-->
-        <div class="project-tags">
+        <!--<p class="project-role">Research Process, Design Prototyping</p>-->
+        <!--<div class="project-tags">
           <span class="tag-design"></span>
           <span class="tag-prototype"></span>
-        </div>
+        </div>-->
         <!--<div class="project-links">
           <a href="projects/context-food.pdf" target="_blank" rel="noopener">View Case Study</a>
         </div>
