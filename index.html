@@ -96,23 +96,42 @@ body{
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .research-item{
   text-align: center;
+  padding: 10px 18px;
+}
+
+.research-icon{
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px auto;
+  border-radius: 12px;
+  background: rgba(166, 137, 117, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-icon i{
+  font-size: 18px;
+  color: #A68975;
 }
 
 .research-item h3{
-  margin: 12px 0 8px 0;
+  /*margin: 12px 0 8px 0;*/
   font-size: 16px;
   font-weight: 500;
-  color: #A68975;
+  color: #2b2b2b;
+  margin-bottom: 6px;
 }
 
 .research-item p{
   font-size: 14px;
+  color: #6f6f6f;
   line-height: 1.6;
-  color: #000;
   max-width: 260px;
   margin: 0 auto;
 }
@@ -483,7 +502,7 @@ p{
 
   .projects-grid{
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 26px;
   }
 
   .project-card{
@@ -556,7 +575,9 @@ p{
     <div class="research-grid">
   
       <div class="research-item">
-        <div class="research-icon"></div>
+        <div class="research-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
         <h3>Creativity Support Tools</h3>
         <p>
           I investigate how interactive systems can support human creativity, informed by the Double Diamond model.
@@ -564,7 +585,9 @@ p{
       </div>
   
       <div class="research-item">
-        <div class="research-icon"></div>
+        <div class="research-icon">
+          <i class="fas fa-robot"></i>
+        </div>
         <h3>Human-AI Interaction</h3>
         <p>
           Studying how people interact with LLMs in the creative process and design space.
@@ -572,7 +595,9 @@ p{
       </div>
   
       <div class="research-item">
-        <div class="research-icon"></div>
+        <div class="research-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
         <h3>Human-AI Decision-Making</h3>
         <p>
           Designing AI systems that support reflective decision-making beyond trust.
