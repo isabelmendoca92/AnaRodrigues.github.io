@@ -76,15 +76,45 @@ body{
   color: #A68975;
 }
 
-.research-image{
+/*.research-image{
   display: flex;
   justify-content: center;
-  margin: 40px 0 60px 0; /*aumentar o bottom*/
+  margin: 40px 0 60px 0;
 }
 
 .research-image img{
   max-width: 100%;
   height: auto;
+}*/
+
+.research-focus{
+  margin-top: 60px;
+}
+
+.research-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.research-item{
+  text-align: center;
+}
+
+.research-item h3{
+  margin: 12px 0 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #A68975;
+}
+
+.research-item p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  max-width: 260px;
+  margin: 0 auto;
 }
   
 .section{
@@ -105,7 +135,7 @@ h2{
   width: 40px;
   height: 3px;
   background: #A68975;
-  margin: 6px 0 16px 0;
+  margin: 4px 0 10px 0;
   border-radius: 2px;
   }
 
@@ -114,7 +144,7 @@ p{
 }
 
 .publications-intro{
-  max-width: 360px;
+  /*max-width: 360px;*/
   margin: 0 0 28px 0;
   font-size: 14px;
   line-height: 1.7;
@@ -514,9 +544,44 @@ p{
     </a>
   </div>
 
-  <div class="research-image">
+  <!--<div class="research-image">
     <img src="areas.jpg" alt="Research Areas">
-  </div>
+  </div>-->
+
+  <div class="section research-focus">
+  
+    <h2>Research Focus</h2>
+    <div class="section-title-line"></div>
+  
+    <div class="research-grid">
+  
+      <div class="research-item">
+        <div class="research-icon"></div>
+        <h3>Creativity Support Tools</h3>
+        <p>
+          I investigate how interactive systems can support human creativity, informed by the Double Diamond model.
+        </p>
+      </div>
+  
+      <div class="research-item">
+        <div class="research-icon"></div>
+        <h3>Human-AI Interaction</h3>
+        <p>
+          Studying how people interact with LLMs in the creative process and design space.
+        </p>
+      </div>
+  
+      <div class="research-item">
+        <div class="research-icon"></div>
+        <h3>Human-AI Decision-Making</h3>
+        <p>
+          Designing AI systems that support reflective decision-making beyond trust.
+        </p>
+      </div>
+  
+    </div>
+  
+  </div>  
 
   <div class="section">
     <h2>Publications</h2>
