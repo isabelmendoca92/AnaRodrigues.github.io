@@ -93,19 +93,25 @@ body{
 }
 
 h2{
-  margin-top: 48px;
+  /*margin-top: 48px;
   margin-bottom: 26px;
   color: #94745E;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01em;*/
+  margin-top: 52px;
+  margin-bottom: 18px;
+  color: #111111;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 p{
   margin-bottom: 16px;
 }
 
-.publication-item{
+/*.publication-item{
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 30px;
@@ -155,7 +161,7 @@ p{
   margin: 0 0 14px 0;
   font-size: 14px;
   font-weight: 200; /* Regular */
-  color: #97755D;
+  /*color: #97755D;
 }
 
 .publication-description{
@@ -192,7 +198,131 @@ p{
   margin-top: 10px;
   line-height: 1.5;
   font-style: italic;
+}*/
+
+.publications-intro{
+  max-width: 360px;
+  margin: 0 0 34px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #6f6f6f;
 }
+
+.publication-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin: 0 0 26px 0;
+  padding: 22px 22px;
+  border: 1px solid rgba(166, 137, 117, 0.12);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.publication-item:nth-of-type(even) .publication-image{
+  order: 2;
+}
+
+.publication-item:nth-of-type(even) .publication-text{
+  order: 1;
+}
+
+.publication-image{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publication-image img{
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.publication-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.publication-title{
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.45;
+}
+
+.publication-authors{
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b6b6b;
+  line-height: 1.7;
+}
+
+.publication-authors .me{
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.publication-venue{
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 16px 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f3efff;
+  color: #7e6cf2;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.publication-description{
+  margin: 0 0 18px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #6b6b6b;
+}
+
+.publication-links{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.publication-links a{
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #5f6fff;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.publication-links a:hover{
+  opacity: 0.75;
+  transform: translateX(2px);
+}
+
+.citation-note{
+  display: inline-block;
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #8b8b8b;
+  text-decoration: none;
 
 .projects-tags-top{
   display: flex;
@@ -387,14 +517,24 @@ p{
   }
 
   .publication-item{
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 18px;
+}
 
-  .publication-image img{
-    width: 100%;
-    max-width: 320px;
-  }
+.publication-item:nth-of-type(even) .publication-image,
+.publication-item:nth-of-type(even) .publication-text{
+  order: initial;
+}
+
+.publication-image img{
+  height: 210px;
+}
+
+.publications-intro{
+  max-width: 100%;
+  margin-bottom: 24px;
+}
 
   .projects-grid{
     grid-template-columns: 1fr;
@@ -465,6 +605,9 @@ p{
 
   <div class="section">
     <h2>Publications</h2>
+    <p class="publications-intro">
+      Peer-reviewed research papers and contributions to the scientific community.
+    </p>
 
     <div class="publication-item">
       <div class="publication-image">
@@ -476,6 +619,7 @@ p{
         <p class="publication-venue">AlpCHI 2026</p>
         <p class="publication-description">
           Human-Computer Interaction (HCI) has incorporated creativity as a research domain, supported by digital tools, such as Creativity Support Tools (CSTs). Our review articulates the foundations of CSTs through the creative process assisted by LLMs.
+        </p>
         <div class="publication-links">
           <a href="https://alpchi.org/wp-content/uploads/2026/02/AlpCHI2026_Creativity_Oriented_HCI_From_Classic_Approach_to_LLMs_based_CSTs.pdf" target="_blank" rel="noopener">Paper</a>
         </div>
