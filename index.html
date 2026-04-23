@@ -170,28 +170,32 @@ p{
   background: #fff;
 }
   
-.publication-item:nth-of-type(even) .publication-image{
+/*.publication-item:nth-of-type(even) .publication-image{
   order: 2;
 }
 
 .publication-item:nth-of-type(even) .publication-text{
   order: 1;
-}
+}*/
 
 .publication-image{
   width: 220px;
-  min-height: 140px;
+  height: 140px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  background: #faf7f4;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .publication-image img{
-  width: 220px;
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .publication-text{
@@ -203,10 +207,10 @@ p{
 
 .publication-title{
   margin: 0 0 6px 0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #A68975;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .publication-authors{
