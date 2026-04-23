@@ -162,7 +162,7 @@ p{
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 28px;
-  align-items: center;
+  align-items: start;
   margin: 0 0 24px 0;
   padding: 20px 22px;
   border: 1px solid rgba(166, 137, 117, 0.18);
@@ -175,7 +175,7 @@ p{
   height: 140px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
@@ -239,19 +239,18 @@ p{
 
 .publication-links{
   display: flex;
-  gap: 10px;
+  gap: 16px;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .publication-links a{
   font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
   text-decoration: none;
-  /*padding: 4px 9px;*/
   padding: 0;
-  border: none;
-  /*background: #FAF5F5;*/
   color: #94745E;
   border-bottom: 1px solid rgba(148, 116, 94, 0.28);
   transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
@@ -267,7 +266,7 @@ p{
 
 .citation-note{
   display: inline-block;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   font-size: 12px;
   line-height: 1.5;
   font-style: italic;
@@ -440,10 +439,7 @@ p{
 
 .project-links{
   display: flex;
-  /*justify-content: center;*/
   justify-content: flex-start;
-  /*gap: 8px;
-  flex-wrap: wrap;*/
 }
 
 .project-links a{
@@ -713,7 +709,6 @@ p{
         <a href="https://doi.org/10.1016/j.yjoc.2024.100079" class="citation-note" target="_blank" rel="noopener">
           Cited by Yale &amp; Harvard, 2024
         </a>
-        <br>
         <div class="publication-links">
           <a href="https://doi.org/10.1145/3591196.3596821" target="_blank" rel="noopener">View publication →</a>
           <a href="preliminary/Poster_CC23.pdf" target="_blank">View poster →</a>
